@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Image Filter</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+
+<section id="filter">
+      <div class="container" id="container">
+            <div id="conta" class="filter-body">
+                  <h1 class="type-text"></h1>
+                  <div class="filter-main">
+                        <div id="conta" class="filter-image">
+                              <img id="filter-img" src="#" alt="your image" height=315 width=100>
+                              <img id="filter-effect" src="img/filter-effect/orange.png">
+                              <div id="to-main">
+                                    <p id="to"></p>
+                              </div>
+                        </div>
+                        <div>
+                              <button id="blue" ></button>
+                              <button id="green" ></button>
+                              <button id="orange" ></button>
+                              <button id="purple" ></button>
+                              <button id="red" ></button>
+                        </div>
+                        <label id="selectImg" class="custom-image-upload">
+                              <input id="selectFile" type="file"/>
+                              Select Image
+                        </label>
+                  </div>
+                  <textarea id="filter-text" placeholder="Input Text"></textarea>
+                  <br>
+                  <button id="inputBtn">Add Text</button>
+            </div>
+</section>
+
+<button id="image-download" onclick="takeScreenShot()"> <i class="fa fa-arrow-down"></i> Download Image</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/my.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/img.js"></script>
+<script src="js/color.js"></script>
+</body>
+</html>
